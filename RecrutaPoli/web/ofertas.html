@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+			<meta charset="utf-8">
+			<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+			<title>RecrutaPoli&reg; - Bem vindo ao nosso site!</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="description" content="RecrutaPoli &eacute; site que conecta o estudante universitario as oportunidades de estagio." />
+			<meta name="author" content="Henrique Uehara">
+			<meta name="keywords" content="estagio, recruta poli, poli recruta, politecnica, USP, POLI, POLI-USP" />
+			<meta name="robots" content="INDEX, FOLLOW" />
+			<link rel="stylesheet" href="css/dashboard.css?v=1.0" media="screen,projection">
+			<link rel="shortcut icon" href="img/recruta_shortcut.png" type="image/x-icon"><!-- favicons -->
+			
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+			<script type="text/javascript" src="js/jssor.core.js"></script>
+			<script type="text/javascript" src="js/jssor.utils.js"></script>
+			<script type="text/javascript" src="js/jssor.slider.js"></script>
+			
+			<script type='text/javascript'> <!-- Script to refresh the page just once -->
+			
+			(function()
+				{
+					if( window.localStorage )
+						{
+						if( !localStorage.getItem( 'firstLoad' ) )
+							{
+							localStorage[ 'firstLoad' ] = true;
+							window.location.reload();
+							}  
+							else
+							localStorage.removeItem( 'firstLoad' );
+							}
+				})();
+				
+			</script> 
+			
+			<!-- Script to make buttom go up -->
+			<script type="text/javascript"> 
+				$('html, body').animate({
+				scrollTop: $("#totop").top
+				}, 2000);
+				
+				$('html, body').animate({
+				scrollTop: $("#toApp").top
+				}, 1500);
+				
+				$('html, body').animate({
+				scrollTop: $("#toComoFunciona").top
+				}, 2000);
+				
+				<!-- Determinamos quando aparece ou desaparece -->
+				$(window).scroll(function() {
+				$("#climbing").css({
+				'opacity' : (($(this).scrollTop())/150) - 1
+				});          
+				}); 
+				
+			</script>
+		
+	</head>
+
+	<!-- Anchor to climb the page -->
+	<div id="totop"></div>
+	
+<body>
+	
+	<div id="menu_lateral">
+		<div>
+			<p>Busca de Vagas<p> <!-- Ao inves de marcelo, colocaremos uma variavel contendo o nome do usuario -->
+		</div>
+			<div>
+				<label>Carga Horaria</label>
+				<select>
+					<option value="5">5 horas por dia </option>
+					<option value="6">6 horas por dia </option>
+					<option value="7">7 horas por dia </option>
+					<option value="8">8 horas por dia </option>
+				</select>
+			</div>
+			
+			<div>
+				<label>Inicio do Estagio</label>
+				<select>
+					<option value="0">Imediado </option>
+					<option value="1">Janeiro </option>
+					<option value="2">Fevereiro </option>
+					<option value="3">Marco </option>
+					<option value="4">Abril </option>
+					<option value="5">Maio </option>
+					<option value="6">Junho </option>
+					<option value="7">Julho </option>
+					<option value="8">Agosto </option>
+					<option value="9">Setembro </option>
+					<option value="10">Outubro </option>
+					<option value="11">Novembro </option>
+					<option value="12">Dezembro </option>
+				</select>
+			</div>
+			
+			<div>
+				<label>Deadline</label>
+				<select>
+					<option value="1">1 Semana </option>
+					<option value="2">2 Semanas </option>
+					<option value="3">3 Semanas </option>
+					<option value="4">4 ou mais </option>
+				</select>
+			</div>
+			
+	</div>
+	
+	<div id="corpo">
+		<header>
+		
+			<div id="top">
+			
+				<img src="img/poli_recruta.png" id="poli_recruta" alt="poli_recruta">
+			
+				<nav id="menu">
+				
+						<ul>
+					
+						<li><a onclick="$('html,body').animate({scrollTop: $('#toApp').offset().top}, 1500);">
+						<p><strong>P&aacute;gina Inicial</strong></p>
+						<!--<span>Conhe&ccedil;a nosso produto</span>--></a>
+						</li>
+					
+						<!-- <li><a href="./">
+						<p><strong>Blog</strong></p>
+						<span>O que oferecemos</span></a>
+						</li> --> 
+					
+						<li><a href="./">
+						<p><strong>Logout</strong></p>
+						<!--<span>Fale conosco</span>--></a>
+						</li>
+					
+					</ul>
+				
+				</nav>
+			
+			</div>
+		
+		</header>
+	
+		<div id="middle">
+		
+			<div id="middle1"> 
+			
+				<div id="center1"> 
+					<div id="mensagem">
+						
+					</div>
+				</div> 
+			
+			</div> 
+		</div>
+	</div>
+</body>
+
+<footer>
+		
+	<div id="footercontent">
+		
+		<div id="centerf">
+			<div class="coluna2" id="coluna2_center">
+				<strong><h3>Recruta Poli</h3></strong>
+				<ul>
+					<li>Av. Professor Mello Moraes, 2231 - Cid. Universit&aacute;ria</li>
+					<li>S&atilde;o Paulo, SP</li>
+					<li>Tel.: (11) 5571-2751 ou 5083-3884</li>
+				</ul>
+			</div> 
+			
+		</div> 
+		
+	</div> 
+	
+</footer> 
+
+
+</html>

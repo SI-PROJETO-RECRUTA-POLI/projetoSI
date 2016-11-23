@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+			<meta charset="utf-8">
+			<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+			<title>RecrutaPoli&reg; - Bem vindo ao nosso site!</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="description" content="RecrutaPoli &eacute; site que conecta o estudante universitario as oportunidades de estagio." />
+			<meta name="author" content="Henrique Uehara">
+			<meta name="keywords" content="estagio, recruta poli, poli recruta, politecnica, USP, POLI, POLI-USP" />
+			<meta name="robots" content="INDEX, FOLLOW" />
+			<link rel="stylesheet" href="css/cadastro_divulgador.css?v=1.0" media="screen,projection">
+			<link rel="shortcut icon" href="img/recruta_shortcut.png" type="image/x-icon"><!-- favicons -->
+			
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+			<script type="text/javascript" src="js/jssor.core.js"></script>
+			<script type="text/javascript" src="js/jssor.utils.js"></script>
+			<script type="text/javascript" src="js/jssor.slider.js"></script>
+			
+			<script type='text/javascript'> <!-- Script to refresh the page just once -->
+			
+			(function()
+				{
+					if( window.localStorage )
+						{
+						if( !localStorage.getItem( 'firstLoad' ) )
+							{
+							localStorage[ 'firstLoad' ] = true;
+							window.location.reload();
+							}  
+							else
+							localStorage.removeItem( 'firstLoad' );
+							}
+				})();
+				
+			</script> 
+			
+			<!-- Script to make buttom go up -->
+			<script type="text/javascript"> 
+				$('html, body').animate({
+				scrollTop: $("#totop").top
+				}, 2000);
+				
+				$('html, body').animate({
+				scrollTop: $("#toApp").top
+				}, 1500);
+				
+				$('html, body').animate({
+				scrollTop: $("#toComoFunciona").top
+				}, 2000);
+				
+				<!-- Determinamos quando aparece ou desaparece -->
+				$(window).scroll(function() {
+				$("#climbing").css({
+				'opacity' : (($(this).scrollTop())/150) - 1
+				});          
+				}); 
+				
+			</script>
+		
+	</head>
+
+	<!-- Anchor to climb the page -->
+	<div id="totop"></div>
+	
+<body>
+	
+	<div id="corpo">
+		<header>
+		
+			<div id="top">
+			
+				<img src="img/poli_recruta.png" id="poli_recruta" alt="poli_recruta">
+			
+				<nav id="menu">
+				
+						<ul>
+					
+						<li><a onclick="$('html,body').animate({scrollTop: $('#toApp').offset().top}, 1500);">
+						<p><strong>P&aacute;gina Inicial</strong></p>
+						<!--<span>Conhe&ccedil;a nosso produto</span>--></a>
+						</li>
+					
+						<!-- <li><a href="./">
+						<p><strong>Blog</strong></p>
+						<span>O que oferecemos</span></a>
+						</li> --> 
+					
+					</ul>
+				
+				</nav>
+			
+			</div>
+		
+		</header>
+	
+		<div id="middle">
+		
+			<div id="middle1"> 
+			
+				<div id="center1"> 
+					<div id="mensagem">
+						
+						<h2>Cadastro de Divulgador</h2>
+						
+						<div id="form_container">
+
+							<form id="CadastrarDivulgador" class="appnitro"  method="post" action="index.html">         
+							<ul >
+							
+							<li id="Primeiro Item" >
+								<label class="CadastrarDivulgador" for="Nome">Nome </label>
+								<div>
+								<input id="Nome" name="Nome" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>
+							
+							<li id="Segundo Item" >
+								<label class="CadastrarDivulgador" for="Sobrenome">Sobrenome </label>
+								<div>
+								<input id="Sobrenome" name="Sobrenome" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>
+	
+							<li id="Nono Item" >
+								<label class="CadastrarDivulgador" for="Usuario">Usuário </label>
+								<div>
+    					        <input id="Usuario" name="Usuario" class="element text medium" type="text" maxlength="255" value=""/> 
+          						</div> 
+        					</li>
+							
+							<li id="Decimo Item" >
+          						<label class="CadastrarDivulgador" for="Senha">Senha </label>
+          						<div>
+            					<input id="Senha" name="Senha" class="element text medium" type="text" maxlength="255" value=""/> 
+          						</div> 
+        					</li> 
+	
+							<li id="Decimo Item" >
+								<label class="CadastrarDivulgador" for="ConfirmarSenha">Confirmar Senha </label>
+								<div>
+            					<input id="ConfirmarSenha" name="ConfirmarSenha" class="element text medium" type="text" maxlength="255" value=""/> 
+          						</div> 
+							</li>
+							
+							<li id="Terceiro Item" >
+								<label class="CadastrarDivulgador" for="DataNascimentoDivulgador">Data de Nascimento </label>
+            					<span>
+              					<input id="DataNascimentoDivulgadorDD" name="DataNascimentoDivulgadorDD" class="element text" size="2" maxlength="2" value="" type="text">
+              					<label for="DataNascimentoDivulgadorDD">DD</label>
+            					</span>
+								
+            					<span>
+              					<input id="DataNascimentoDivulgadorMM" name="DataNascimentoDivulgadorMM" class="element text" size="2" maxlength="2" value="" type="text">
+         					    <label for="DataNascimentoDivulgadorMM">MM</label>
+            					</span>
+            					
+								<span>
+              					<input id="DataNascimentoDivulgadorAAAA" name="DataNascimentoDivulgadorAAAA" class="element text" size="4" maxlength="4" value="" type="text">
+              					<label for="DataNascimentoDivulgadorAAAA">AAAA</label>
+            					</span>    
+							</li>
+							
+					        <li id="Quarto Item" >
+								<label class="CadastrarDivulgador" for="EmailDivulgador">Email </label>
+								<div>
+            					<input id="EmailDivulgador" name="EmailDivulgador" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>  
+	
+							<li id="Quinto Item" >
+								<label class="CadastrarDivulgador" for="Empresa">Empresa </label>
+								<div>
+								<input id="Empresa" name="Empresa" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>  
+	
+							<li id="Sexto Item" >
+								<label class="CadastrarDivulgador" for="Cargo">Cargo </label>
+								<div>
+								<input id="Cargo" name="Cargo" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>   
+	
+							<li id="Setimo Item" >
+								<label class="CadastrarDivulgador" for="UniversidadeFormacao">Universidade de Formação</label>
+								<div>
+								<input id="UniversidadeFormacao" name="UniversidadeFormacao" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li>
+	
+							<li id="Oitavo Item" >
+								<label class="CadastrarDivulgador" for="AnoFormacaoDivulgador">Ano de Formação </label>
+								<div>
+								<input id="AnoFormacaoDivulgador" name="AnoFormacaoDivulgador" class="element text medium" type="text" maxlength="255" value=""/> 
+								</div> 
+							</li> 
+        
+							<input type="hidden" name="form_id" value="3541" />
+							<br><input id="saveCadastrarDivulgador" class="botao" type="submit" name="EnviarCadastrarDivulgador" value="Cadastrar" />
+						</ul>
+						</form> 
+					</div>
+						
+					</div>
+				</div> 
+			
+			</div> 
+		</div>
+	</div>
+</body>
+
+<footer>
+		
+	<div id="footercontent">
+		
+		<div id="centerf">
+			<div class="coluna2" id="coluna2_center">
+				<strong><h3>Recruta Poli</h3></strong>
+				<ul>
+					<li>Av. Professor Mello Moraes, 2231 - Cid. Universit&aacute;ria</li>
+					<li>S&atilde;o Paulo, SP</li>
+					<li>Tel.: (11) 5571-2751 ou 5083-3884</li>
+				</ul>
+			</div> 
+			
+		</div> 
+		
+	</div> 
+	
+</footer> 
+
+
+</html>

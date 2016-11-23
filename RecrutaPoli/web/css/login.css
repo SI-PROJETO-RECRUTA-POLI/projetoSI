@@ -1,0 +1,61 @@
+/*
+    Document   : login style sheet
+    Author     : Vinicius
+*/
+
+#myLoginForm{
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	z-index: 500;
+	text-shadow: 1px 1px 5px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	text-decoration: none;
+	width: 200px;
+	display: none;
+}
+
+#loginStartButton{
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	position: fixed;
+	top: 15px;
+	right: 120px;
+	z-index: 500;
+	background: #70DA30;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: 1px 1px 5px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 8px 12px 8px 10px;
+	text-decoration: none;
+
+}
+#loginFinalButton{
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	z-index: 500;
+	background: #70DA30;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: 1px 1px 5px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 12px 8px 10px;
+	text-decoration: none;
+	float:right;
+}
+
+
+

@@ -1,0 +1,435 @@
+/*******************************************************************************************************************
+*  Author: Henrique Uehara                                                                          
+*  Date: 28.10.2016                                                                                                
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  IMPORT OTHER STYLES                                                                                             
+*******************************************************************************************************************/
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
+
+/*******************************************************************************************************************
+*  DEVELOPMENT OF SPECIFIC STYLES CSS                                                                                             
+*******************************************************************************************************************/
+
+/* Mobile-specific Styles */
+	@media only screen and (max-width: 710px) { 				
+}
+
+/*******************************************************************************************************************
+*  DEVELOPMENT OF CSS                                                                                             
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  HEADER                                                                                             
+*******************************************************************************************************************/
+
+header {
+	width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+	background: rgba(0, 83, 160, 0.45);
+	font: normal 20px Sans-Serif, Arial, Tahoma;
+	line-height: 1.7em;
+}
+
+span{
+	font: normal 12px Arial, Tahoma, Verdana;
+	color: rgb(140, 140, 140);
+}
+
+#top{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 79px;
+}
+	
+#poli_recruta{
+	width: 140px;
+	position: relative;
+	float: left;
+	margin: 32px 0px 20px ;
+	left: 140px;
+	top: -20px;
+	cursor: pointer;
+}
+
+
+
+#menu ul{
+	padding: 0px;
+	margin: 0px;	
+	list-style: none;
+	position: relative;
+	float: right;
+	right: 130px; 
+	top: 25px;
+	margin-right: 40px;
+}
+
+#menu ul li{
+	display: inline-block;
+}
+
+#menu ul li a{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	padding: 0px 16px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#menu ul li a:hover {
+	color: rgba(81, 203, 238, 1);
+}
+
+
+.login{
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	position: fixed;
+	top: 15px;
+	right: 120px;
+	z-index: 500;
+	background: #70DA30;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: 1px 1px 5px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 8px 12px 8px 10px;
+	text-decoration: none;
+}
+
+.login:hover {
+	background: #64C42C;
+	text-decoration: none;
+}
+
+/* Anchor to use to climb the page */
+#totop{
+	position: absolute;
+	top: 0;
+}
+
+#climbing {
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	cursor: pointer;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	height: 45px;
+	width: 36px;
+	border:1px solid rgb(117, 117, 117); 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	padding: 5px 5px 5px 5px; 
+	text-decoration:none; 
+	display:inline-block;
+	background-color: rgba(107, 107, 107, 0.5);
+}
+
+#climbing:hover {
+	border:1px solid rgb(107, 107, 107);
+	background-color: rgba(57, 57, 57, 0.5);
+}
+
+.botao{
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	background: #70DA30;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 5px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 8px 12px 8px 10px;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	top: 2px;
+}
+
+.botao:hover {
+	background: #64C42C;
+	text-decoration: none;
+}
+
+#sender{
+	position: relative;
+	left: 30px;
+	top: 20px;
+}
+
+#sender p{
+	margin-top: 22px;
+	margin-bottom: 22px;
+	font-size: 18px;
+}
+
+/*******************************************************************************************************************
+*  MIDDLE                                                                                           
+*******************************************************************************************************************/
+
+#middle{
+	/* margin-top: 105px; */
+	width: 100%;
+	background: rgb(239, 239, 239);
+	overflow: hidden;
+	font: normal 14px Myriad Pro, Tahoma, Verdana;
+	line-height: 1.8em;
+}
+
+#middle1{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: #FFFFFF;
+	margin-top: 0px;
+	color: #0053A0;
+}
+
+#mensagem{
+	position: relative;
+	background: rgba(169,169,169, 0.7);
+	width: 700px;
+	height: 900px;
+	overflow: hidden;
+	top: 140px;
+	left: 50%;
+	margin-left: -350px;
+	border-radius: 30px;
+}
+
+#mensagem h2{
+	position: relative;
+	top: 15px;
+	left: 40px;
+	margin-bottom: 26px;
+}
+
+#headline{
+	position: relative;
+	top: 15px;
+	left: 30px;
+}
+
+#headline h2{
+	font: bold 42px Myriad Pro, Tahoma, Verdana;
+	text-shadow: 1px 1px 1px darkgray;
+}
+
+#subtitle{
+	position: relative;
+	width: 800px;
+	top: 30px;
+	left: 50px;
+}
+
+#subtitle h3{
+	font: bold 35px Myriad Pro, Tahoma, Verdana;
+	text-shadow: 1px 1px 1px darkgray;
+}
+
+#center1{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 1100px;
+	background-image: url("../img/banner02.jpg");
+	/* background-image: url("../img/capa.jpg"); */
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#email{
+	color: #595959;
+	height: 38px;
+	width: 240px;
+	border-radius: 3px;
+	margin-right: 10px; 
+	margin-left: 10px; 
+}
+
+#form_container{
+	margin-left: 70px;
+	font: bold 15px Arial, Tahoma, Verdana;
+}
+#form_container li{
+	margin-top: 10px;
+}
+
+#form_container label{
+	color: #0053A0;
+}
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
+#middle2 {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	/* width: 1300px; */
+	margin: 0 auto;
+	color: #7f7e7d;
+	background: #FFFFFF;
+} 
+
+
+#toComoFunciona{
+	position: absolute;
+	top: -30px;
+}
+
+#middle2 h1{
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-weight: 100;
+	font-size: 45px;
+}
+
+#middle2 h2{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	font-weight: 100;
+}
+
+#middle2 h3{
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-weight: 100;
+	font-size: 17px;
+}
+
+#middle2 h4{
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-weight: 100;
+}
+
+#middle2 p, a{
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
+
+#banner05{
+	position: relative;
+	left: 50%;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	margin-left: -400px;
+	width: 800px;
+}
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
+#middle3{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 750px; 
+	background-image: url("../img/banner03.jpg");
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#middle3_avisos{
+	position: relative;
+	top: 80px;
+	left: 120px;
+}
+
+#middle3 h3{
+	color: rgb(0, 83, 160);
+	font: bold 30px Myriad Pro, Tahoma, Verdana;
+	text-shadow: 1px 1px 1px darkgray;
+}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                             
+*******************************************************************************************************************/
+
+#footercontent{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background: rgb(0, 83, 160);
+	font: normal 13px Arial, Tahoma, Verdana;
+	line-height: 1.7em;
+	color: white;
+	margin-bottom: -20px;
+}
+
+#centerf{
+	width: 100%;
+	margin: 0 auto 10px;
+	overflow: hidden;
+	position: relative;
+	background: rgb(0, 83, 160);
+	top: -10px;
+}
+
+#centerf div{
+	display: inline-block;
+}
+
+
+#coluna2_center{
+	position: relative;
+	width: 800px;
+	margin-left: 50%;
+	left: -400px;
+	top: 15px;
+	margin-bottom: 10px;
+}
+
+#centerf .coluna2{
+	position: relative;
+	text-align: center;
+}
+ 
+#centerf .coluna2 h3{
+	text-align: center;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 19px; 
+}
+

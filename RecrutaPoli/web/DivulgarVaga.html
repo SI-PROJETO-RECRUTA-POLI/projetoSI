@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+			<meta charset="utf-8">
+			<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+			<title>RecrutaPoli&reg; - Bem vindo ao nosso site!</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="description" content="RecrutaPoli &eacute; site que conecta o estudante universitario as oportunidades de estagio." />
+			<meta name="author" content="Henrique Uehara">
+			<meta name="keywords" content="estagio, recruta poli, poli recruta, politecnica, USP, POLI, POLI-USP" />
+			<meta name="robots" content="INDEX, FOLLOW" />
+			<link rel="stylesheet" href="css/divulgar_vaga.css?v=1.0" media="screen,projection">
+			<link rel="shortcut icon" href="img/recruta_shortcut.png" type="image/x-icon"><!-- favicons -->
+			
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+			<script type="text/javascript" src="js/jssor.core.js"></script>
+			<script type="text/javascript" src="js/jssor.utils.js"></script>
+			<script type="text/javascript" src="js/jssor.slider.js"></script>
+			
+			<script type='text/javascript'> <!-- Script to refresh the page just once -->
+			
+			(function()
+				{
+					if( window.localStorage )
+						{
+						if( !localStorage.getItem( 'firstLoad' ) )
+							{
+							localStorage[ 'firstLoad' ] = true;
+							window.location.reload();
+							}  
+							else
+							localStorage.removeItem( 'firstLoad' );
+							}
+				})();
+				
+			</script> 
+			
+			<!-- Script to make buttom go up -->
+			<script type="text/javascript"> 
+				$('html, body').animate({
+				scrollTop: $("#totop").top
+				}, 2000);
+				
+				$('html, body').animate({
+				scrollTop: $("#toApp").top
+				}, 1500);
+				
+				$('html, body').animate({
+				scrollTop: $("#toComoFunciona").top
+				}, 2000);
+				
+				<!-- Determinamos quando aparece ou desaparece -->
+				$(window).scroll(function() {
+				$("#climbing").css({
+				'opacity' : (($(this).scrollTop())/150) - 1
+				});          
+				}); 
+				
+			</script>
+		
+	</head>
+
+	<!-- Anchor to climb the page -->
+	<div id="totop"></div>
+	
+<body>
+	
+	<div id="corpo">
+		<header>
+		
+			<div id="top">
+			
+				<img src="img/poli_recruta.png" id="poli_recruta" alt="poli_recruta">
+			
+				<nav id="menu">
+				
+						<ul>
+					
+						<li><a onclick="$('html,body').animate({scrollTop: $('#toApp').offset().top}, 1500);">
+						<p><strong>P&aacute;gina Inicial</strong></p>
+						<!--<span>Conhe&ccedil;a nosso produto</span>--></a>
+						</li>
+					
+						<!-- <li><a href="./">
+						<p><strong>Blog</strong></p>
+						<span>O que oferecemos</span></a>
+						</li> --> 
+					
+					</ul>
+				
+				</nav>
+			
+			</div>
+		
+		</header>
+	
+		<div id="middle">
+		
+			<div id="middle1"> 
+			
+				<div id="center1"> 
+					<div id="mensagem">
+						
+						<h2>Divulgação da Vaga</h2>
+						
+						<div id="form_container">
+
+							<form id="CadastrarVaga" class="appnitro"  method="post" action="PaginaDivulgador.html">          
+      <ul >
+        <li id="Primeiro Item" >
+          <label class="Vaga" for="Empresa">Empresa </label>
+          <div>
+            <input id="Empresa" name="Empresa" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>   
+        <li id="Segundo Item" >
+          <label class="Vaga" for="Setor">Setor </label>
+          <div>
+            <input id="Setor" name="Setor" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>   
+        <li id="Terceiro Item" >
+          <label class="Vaga" for="Cargo">Cargo </label>
+          <div>
+            <input id="Cargo" name="Cargo" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>   
+	<li id="Terceiro/Quarto Item" >
+          <label class="Vaga" for="EmailContato">Email para contato </label>
+          <div>
+            <input id="EmailContato" name="EmailContato" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>
+        <li id="Quarto Item" >
+          <label class="Vaga" for="Jornada">Jornada de Trabalho (h/semana) </label>
+          <div>
+            <input id="Jornada" name="Jornada" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>  
+	<li id="Quarto/Quinto Item" >
+          <label class="Vaga" for="Local">Local do Estágio (Cidade/Bairro) </label>
+          <div>
+            <input id="Local" name="Local" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>  
+        <li id="Quinto Item" >
+          <label class="Vaga" for="DataLimiteAplicacao">Data Limite para Aplicação </label>
+            <span>
+              <input id="DataLimiteAplicacaoDD" name="DataLimiteAplicacaoDD" class="element text" size="2" maxlength="2" value="" type="text">
+              <label for="DataLimiteAplicacaoDD">DD</label>
+            </span>
+            <span>
+              <input id="DataLimiteAplicacaoMM" name="DataLimiteAplicacaoMM" class="element text" size="2" maxlength="2" value="" type="text">
+              <label for="DataLimiteAplicacaoMM">MM</label>
+            </span>
+            <span>
+              <input id="DataLimiteAplicacaoAAAA" name="DataLimiteAplicacaoAAAA" class="element text" size="4" maxlength="4" value="" type="text">
+              <label for="DataLimiteAplicacaoAAAA">AAAA</label>
+            </span>    
+        </li>   
+        <li id="Sexto Item" >
+          <label class="Vaga" for="DataMinimaFormacao">Data Mínima de Formação </label>
+            <span>
+              <input id="DataMinimaFormacaoMM" name="DataMinimaFormacaoMM" class="element text" size="2" maxlength="2" value="" type="text">
+              <label for="DataMinimaFormacaoMM">MM</label>
+            </span>
+            <span>
+              <input id="DataMinimaFormacaoAAAA" name="DataMinimaFormacaoAAAA" class="element text" size="4" maxlength="4" value="" type="text">
+              <label for="DataMinimaFormacaoAAAA">AAAA</label>
+            </span>    
+        </li>
+        <li id="Setimo Item" >
+          <label class="Vaga" for="DataMinimaFormacao">Data Máxima de Formação </label>
+            <span>
+              <input id="DataMaximaFormacaoMM" name="DataMaximaFormacaoMM" class="element text" size="2" maxlength="2" value="" type="text">
+              <label for="DataMaximaFormacaoMM">MM</label>
+            </span>
+            <span>
+              <input id="DataMaximaFormacaoAAAA" name="DataMaximaFormacaoAAAA" class="element text" size="4" maxlength="4" value="" type="text">
+              <label for="DataMaximaFormacaoAAAA">AAAA</label>
+            </span>     
+        </li>
+        <li id="Oitavo Item" >
+          <label class="Vaga" for="Salario">Salário </label>
+          <div>
+            <input id="Salario" name="Salario" class="element text medium" type="text" maxlength="255" value=""/> 
+          </div> 
+        </li>   
+        <li id="Nono Item" >
+          <label class="Vaga" for="DescricaoVaga">Descrição da Vaga </label>
+          <div>
+            <textarea id="DescricaoVaga" name="DescricaoVaga" class="element textarea medium" rows="10" cols="70"></textarea> 
+          </div> 
+        </li>   
+        <li id="Decimo Item" >
+          <label class="Vaga" for="Requisitos">Requisitos </label>
+          <div>
+            <textarea id="Requisitos" name="Requisitos" class="element textarea medium" rows="10" cols="70"></textarea> 
+          </div> 
+        </li>
+        <input type="hidden" name="form_id" value="3541" />
+        <br><input id="saveNovaVaga" class="botao" type="submit" name="EnviarVaga" value="Enviar Vaga" />
+      </ul>
+    </form> 
+	
+					</div>
+						
+					</div>
+				</div> 
+			
+			</div> 
+		</div>
+	</div>
+</body>
+
+<footer>
+		
+	<div id="footercontent">
+		
+		<div id="centerf">
+			<div class="coluna2" id="coluna2_center">
+				<strong><h3>Recruta Poli</h3></strong>
+				<ul>
+					<li>Av. Professor Mello Moraes, 2231 - Cid. Universit&aacute;ria</li>
+					<li>S&atilde;o Paulo, SP</li>
+					<li>Tel.: (11) 5571-2751 ou 5083-3884</li>
+				</ul>
+			</div> 
+			
+		</div> 
+		
+	</div> 
+	
+</footer> 
+
+
+</html>
