@@ -6,8 +6,7 @@
 package divulgador;
 
 import java.sql.*;
-import java.util.*;
-import transaction.Transacao;
+import transacao.Transacao;
 /**
  *
  * @author luizg
@@ -84,6 +83,7 @@ public class DivulgadorData {
             stmt.setInt(1,divulgador.getUsuario());
             stmt.setString(2,divulgador.getCargo());
             stmt.setInt(3,divulgador.getEmpresa());
+            stmt.setInt(4, divulgador.getId());
 
             // executa
             int rs = stmt.executeUpdate();
@@ -107,8 +107,6 @@ public class DivulgadorData {
             // seta os valores
 
             stmt.setInt(1,divulgador.getId());
-            stmt.setString(2,divulgador.getCargo());
-            stmt.setInt(3,divulgador.getEmpresa());
 
             // executa
             int rs = stmt.executeUpdate();
@@ -117,5 +115,5 @@ public class DivulgadorData {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-    } //fim atualizar
+    } //fim excluir
 }
