@@ -7,6 +7,8 @@ package divulgador;
 
 import java.sql.*;
 import transacao.Transacao;
+import java.util.*;
+
 /**
  *
  * @author luizg
@@ -116,4 +118,65 @@ public class DivulgadorData {
             throw new RuntimeException(e);
         }
     } //fim excluir
+    
+    public EmpresaDAO buscarEmpresa(String nome, Transacao tr) {
+        
+        EmpresaDAO empresa = new EmpresaDAO();
+        Connection con = tr.obterConexao();
+        
+        String sql = "select * from empresa where nome=?";
+
+        try {
+            // prepared statement para inserção
+            PreparedStatement stmt = con.prepareStatement(sql);
+
+            // seta os valores
+            stmt.setString(1, nome);
+
+            // executa
+            ResultSet rs = stmt.executeQuery();
+            while(rs.next()){  
+                empresa.setId(rs.getInt("id"));
+                empresa.setNome(rs.getString("nome"));
+                empresa.setCategoria(rs.getString("categoria"));
+            }
+            stmt.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } 
+        return empresa;
+        
+    } //fim buscarOferta
+    
+    public Vector buscarEmpresas(Transacao tr) {
+        
+        EmpresaDAO empresa = new EmpresaDAO();
+        Connection con = tr.obterConexao();
+        
+        //cria array escalavel para guardar resultados
+        Vector empresas = new Vector();
+        
+        String sql = "select * from empresa";
+
+        try {
+            // prepared statement para inserção
+            PreparedStatement stmt = con.prepareStatement(sql);
+
+            // executa
+            ResultSet rs = stmt.executeQuery();
+            
+             while (rs.next()) {
+                empresa.setId(rs.getInt("id"));
+                empresa.setNome(rs.getString("nome"));
+                empresa.setCategoria(rs.getString("categoria"));
+                empresas.add(empresa);
+             }
+             stmt.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } 
+        return empresas;
+        
+    } //fim buscarEmpresas  
+    
 }

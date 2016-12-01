@@ -3,7 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/vinicius/Documentos/si/RecrutaPoli/RecrutaPoli/web/resultadoLogin.jsp</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/divulgador/DivulgadorDAO.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/web/resultadoDivulgador.jsp</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/usuario/UsuarioData.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/web/cadastrarDivulgador.jsp</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/controladores/ControladorOferta.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/web/PaginaDivulgador.jsp</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/divulgador/EmpresaDAO.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/controladores/ControladorDivulgador.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/transacao/Transacao.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/divulgador/VagaDAO.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/divulgador/LoginDAO.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/usuario/UsuarioDAO.java</file>
+            <file>file:/C:/Users/luizg/Desktop/si%20recruta/RecrutaPoli/src/java/controladores/ControladorUsuario.java</file>
         </group>
     </open-files>
 </project-private>
