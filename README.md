@@ -1,8 +1,10 @@
 #Versão MVC
 
+
 Clone o repositório em uma pasta, e toda vez que for trabalhar, não se esqueçar de fazer um comando git push pelo terminal, assim vc garante que está sempre com a versão mais atualizada do código.
 
 Passos:
+
 -Crie uma nova pasta
 
 -Entre com o terminal do Git (aperte o botão do Windows, digite Git e selecione o Git Bash)
