@@ -190,7 +190,7 @@ public class ControladorOferta {
         return lista;
     } //filtrarPorStatus
     
-    //TODO GUARDAR EM ARRAY RESULTADOS
+    //TODO fazer funçao no Model para retornar valores maiores
     public Vector filtrarPorSalario(float salario) {
         OfertaDAO oferta = new OfertaDAO();
         Transacao tr = new Transacao();

@@ -193,17 +193,29 @@ public class OfertaData {
     } //fim buscarOferta  
     
 
-    
+    //TO DO verificar inserçoes no DAO
     public Vector buscarOfertas(Transacao tr) {
         
-        OfertaDAO oferta = new OfertaDAO();
+        OfertaCompletaDAO oferta = new OfertaCompletaDAO();
         Connection con = tr.obterConexao();
         
         //cria array escalavel para guardar resultados
         Vector ofertas = new Vector();
         
-        String sql = "select * from oferta";
-
+        String sql = "SELECT empresa.nome, empresa.categoria, " +
+            "oferta.deadline_aplicacao, oferta.area, oferta.salario, oferta.numeroDeVagas, " +
+            "requisitosDaVaga.dataMaximaDeFormacao, " +
+            "requisitosDaVaga.dataMinimaDeFormacao, " +
+            "requisitosDaVaga.jornadaDeTrabalhoSemanal, requisitosDaVaga.dataInicioDoEstagio, " +
+            "requisitosDaVaga.horarioFlexivel, " +
+            "local.regiao " +
+            "FROM oferta " +
+            "INNER JOIN empresaON oferta.empresaID = empresa.empresaID " +
+            "INNER JOIN requisitosDaVaga " +
+            "ON oferta.ofertaID = requisitosDaVaga.ofertaID " +
+            "INNER JOIN local " +
+            "ON oferta.ofertaID = local.ofertaID";
+        
         try {
             // prepared statement para inserção
             PreparedStatement stmt = con.prepareStatement(sql);
